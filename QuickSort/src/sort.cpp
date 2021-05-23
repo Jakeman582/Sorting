@@ -38,19 +38,10 @@ int main(int argc, char** argv) {
 	// Sort using the first element as pivot
 	sortFirst(data, size);
 
-	// Create a file to store the results
-	string output_file_name = "SORTED.txt";
-	ofstream output_file(output_file_name);
-	if(output_file.fail()) {
-		cout << "Failed to create file SORTED.txt for storing results" << endl;
-		exit(0);
-	}
-
-	// Store the results in the file
+	// Write results to stdout
 	for(int index = 0; index < size; index++) {
-		output_file << data[index] << endl;
+		cout << data[index] << endl;
 	}
-	output_file.close();
 
 	return 0;
 }
