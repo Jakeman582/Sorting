@@ -5,8 +5,8 @@
 #define CATCH_CONFIG_MAIN
 
 #include <iostream>
-#include "../lib/Catch2/catch_amalgamated.hpp"
-#include "../src/quicksort.hpp"
+#include "../ext/Catch2/catch_amalgamated.hpp"
+#include "../lib/quicksort.hpp"
 
 using namespace std;
 

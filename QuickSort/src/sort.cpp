@@ -3,7 +3,7 @@
 #include <vector>
 #include <fstream>
 
-#include "quicksort.hpp"
+#include "../lib/quicksort.hpp"
 
 using namespace std;
 
@@ -48,10 +48,7 @@ int main(int argc, char** argv) {
 
 	// Store the results in the file
 	for(int index = 0; index < size; index++) {
-		output_file << data[index];
-		if(index < size - 1) {
-			output_file << endl;
-		}
+		output_file << data[index] << endl;
 	}
 	output_file.close();
 
