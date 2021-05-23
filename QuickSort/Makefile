@@ -12,5 +12,8 @@ TEST_HEADERS = $(TEST_LIBRARY_DIRECTORY)/catch_amalgamated.hpp
 TEST_SOURCES = test/test.cpp $(TEST_LIBRARY)
 TEST_OBJECTS = $(TEST_SOURCES:.cpp=.o)
 
+sort : $(MAIN_OBJECTS)
+	$(CXX) $(CXXFLAGS) $(MAIN_OBJECTS) -o sort
+
 test : $(TEST_OBJECTS) $(MAIN_OBJECTS)
 	$(CXX) $(CXXFLAGS) $(MAIN_OBJECTS) $(TEST_OBJECTS) -o test/quicksorttest
