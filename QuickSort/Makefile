@@ -4,7 +4,7 @@ GPROF_FLAGS = -pg
 DEBUG_FLAGS = -g
 
 EXE = sort debug_sort test/quicksorttest profile_sort
-OUTPUT = profiling/timings.txt gmon.out
+OUTPUT = profiling/timings.txt gmon.out profiling/profile.txt
 
 MAIN_SOURCES = $(wildcard src/*.cpp)
 MAIN_HEADERS = $(wildcard src/*.hpp)
