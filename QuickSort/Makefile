@@ -1,6 +1,7 @@
 CXX = g++
 CXXFLAGS = -Wall
 GPROF_FLAGS = -pg
+DEBUG_FLAGS = -g
 
 MAIN_SOURCES = $(wildcard src/*.cpp)
 MAIN_HEADERS = $(wildcard src/*.hpp)
@@ -14,6 +15,9 @@ TEST_OBJECTS = $(TEST_SOURCES:.cpp=.o)
 
 sort : $(MAIN_OBJECTS)
 	$(CXX) $(CXXFLAGS) $(MAIN_OBJECTS) -o sort
+
+debug : $(MAIN_OBJECTS)
+	$(CXX) $(CXXFLAGS) $(DEBUG_FLAGS) $(MAIN_OBJECTS) -o debug_sort
 
 test : $(TEST_OBJECTS) $(MAIN_OBJECTS)
 	$(CXX) $(CXXFLAGS) $(MAIN_OBJECTS) $(TEST_OBJECTS) -o test/quicksorttest

@@ -17,7 +17,7 @@ int main(int argc, char** argv) {
 
 	// Attempt to open the file
 	ifstream input_file(argv[1]);
-	if(!input_file.is_open()) {
+	if(input_file.fail()) {
 		cout << "Unable to open file \"" << argv[1] << "\"" << endl;
 		exit(0);
 	}
@@ -41,7 +41,7 @@ int main(int argc, char** argv) {
 	// Create a file to store the results
 	string output_file_name = "SORTED.txt";
 	ofstream output_file(output_file_name);
-	if(!output_file.is_open()) {
+	if(output_file.fail()) {
 		cout << "Failed to create file SORTED.txt for storing results" << endl;
 		exit(0);
 	}
