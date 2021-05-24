@@ -17,15 +17,15 @@ void swap(int& left, int& right) {
 void partition(int list[], int& pivot, int left, int right) {
 
 	pivot = left;
+	int local_pivot = pivot;
 	int low = left + 1;
 	int high = right;
-	//int buffer = 0;
 
 	while(low <= high) {
-		if(list[low] <= list[pivot]) {
+		if(list[low] <= list[local_pivot]) {
 			low++;
 		} else {
-			if(list[pivot] <= list[high]) {
+			if(list[local_pivot] <= list[high]) {
 				high--;
 			} else {
 				swap(list, low, high);
@@ -34,7 +34,7 @@ void partition(int list[], int& pivot, int left, int right) {
 		}
 	}
 
-	swap(list, pivot, high);
+	swap(list, local_pivot, high);
 	pivot = high;
 
 }
