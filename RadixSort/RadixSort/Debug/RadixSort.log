@@ -1,0 +1,5 @@
+﻿  Using triplet "x86-windows" from "C:\Users\jakeh\vcpkg\installed\x86-windows\"
+  radixsort.cpp
+  test.cpp
+  Generating Code...
+  RadixSort.vcxproj -> C:\Users\jakeh\source\repos\RadixSort\Debug\RadixSort.exe

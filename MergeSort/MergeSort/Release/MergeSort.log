@@ -1,0 +1,9 @@
+﻿  Using triplet "x86-windows" from "C:\Users\jakeh\vcpkg\installed\x86-windows\"
+  mergesort.cpp
+  test.cpp
+  Generating code
+  7992 of 7992 functions (100.0%) were compiled.
+    7985 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  MergeSort.vcxproj -> C:\Users\jakeh\source\repos\Mergesort\Release\MergeSort.exe

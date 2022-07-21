@@ -1,0 +1,5 @@
+﻿  Using triplet "x86-windows" from "C:\Users\jakeh\vcpkg\installed\x86-windows\"
+  countsort.cpp
+  test.cpp
+  Generating Code...
+  CountSort.vcxproj -> C:\Users\jakeh\source\repos\CountSort\Debug\CountSort.exe
